@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex items</title>
+    <style>
+      .burger img {
+        width: 100%;
+        height: 100vh;
+        border: 1vh;
+      }
+      .burger1 p {
+        display: flex;
+        font-size: 5vh;
+        margin-top: -10vh;
+        margin-left: 5vh;
+        font-family: monospace;
+        color: gray;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .nav {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 0 0 2vh;
+      }
+      .nav1 {
+        color: gray;
+
+        margin-left: 4vh;
+        font-family: monospace;
+        font-size: 3vh;
+      }
+      .nav2 {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5vh;
+        margin-right: 10vh;
+        font-family: monospace;
+        font-size: 3vh;
+        color: gray;
+      }
+      .basis {
+        display: flex;
+        width: 100%;
+        height: 90vh;
+
+        margin-top: 20vh;
+      }
+      .basis img {
+        border-radius: 2vh;
+        margin-left: 10%;
+        height: 90vh;
+        flex-basis: 40%;
+      }
+      .basis1 {
+        flex-basis: 45%;
+      }
+      .basis1 h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        margin-top: 5vh;
+        margin-left: 35vh;
+        font-size: 5vh;
+      }
+      .basis1 h3 {
+        margin-left: 37vh;
+        margin-top: 8vh;
+        font-size: 3vh;
+      }
+      :root {
+        font-family: monospace;
+      }
+      .basis p {
+        font-size: 3vh;
+        margin-top: 10vh;
+        margin-left: 10vh;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .menu {
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        margin-top: 20vh;
+      }
+      .menu1 {
+        flex-basis: 50%;
+      }
+      .menu h1 {
+        margin-top: 10vh;
+        margin-left: 35vh;
+        font-size: 5vh;
+      }
+      .menu1 h3 {
+        font-size: 3vh;
+        margin-top: 5vh;
+        margin-left: 20vh;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .menu1 p {
+        font-size: 2.5vh;
+        margin-top: 3vh;
+        margin-left: 20vh;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .menu img {
+        margin-left: 5vh;
+        border-radius: 2vh;
+        flex-basis: 38%;
+      }
+      .contact {
+        width: 90%;
+        height: 100vh;
+        margin-top: 20vh;
+      }
+      .contact h1 {
+        margin-left: 20vh;
+        font-size: 5vh;
+      }
+      .contact p {
+        margin-left: 20vh;
+        margin-top: 5vh;
+      }
+      .contact h3 {
+        margin-left: 20vh;
+        margin-top: 5vh;
+        color: navy;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav1">
+        <h4>Gourmet au catering</h4>
+      </div>
+      <div class="nav2">
+        <h4>About</h4>
+        <h4>Menu</h4>
+        <h4>Contact</h4>
+      </div>
+    </div>
+
+    <div class="burger">
+      <div class="bug">
+        <img src="burger.jpg" alt="" />
+      </div>
+      <div class="burger1">
+        <p>Le Catering</p>
+      </div>
+    </div>
+    <div class="basis">
+      <img src="burger2.jpg" alt="" />
+      <div class="basis1">
+        <h1>About Catering</h1>
+        <h3>Tradition since 1889</h3>
+        <p>
+          The Catering was founded in blabla by Mr. Smith in lorem ipsum <br />
+          dolor sit amet, consectetur adipiscing elit consectetur adipiscing
+          elit, <br />
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <br />
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          <br />
+          nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+          <br />
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          <br />
+          pariatur.We only use seasonal ingredients. <br /><br /><br />
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          <br />
+          officia deserunt mollit anim id est laborum consectetur adipiscing
+          <br />
+          elit, sed do eiusmod temporincididunt ut labore et dolore magna
+          <br />aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco <br />
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <div class="menu">
+      <div class="menu1">
+        <h1>Our Menu</h1>
+
+        <h3>Bread Basket</h3>
+        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+        <h3>Honey Almond Granola with Fruits</h3>
+        <p>
+          Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
+        </p>
+        <h3>Belgian Waffle</h3>
+        <p>Vanilla flavored batter with malted flour 7.50</p>
+        <h3>Scrambled eggs</h3>
+        <p>
+          Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+        </p>
+        <h3>Blueberry Pancakes</h3>
+        <p>With syrup, butter and lots of berries 8.50</p>
+      </div>
+      <img src="meny.jpg" alt="" />
+    </div>
+    <div class="contact">
+      <h1>Contact</h1>
+      <p>
+        We offer full-service catering for any event, large or small. We
+        understand your needs and we will cater the food to satisfy the biggerst
+        criteria of them all, both look and taste. Do not hesitate to contact
+        us.
+      </p>
+      <h3>Catering Service, 42nd Living St, 43043 New York, NY</h3>
+      <p>
+        You can also contact us by phone 00553123-2323 or email
+        catering@catering.com, or you can send us a message here:
+      </p>
+      <p>Name</p>
+      <p>How many people</p>
+      <p>16-11-2020 20:00</p>
+      <p>Message\Special Requirements</p>
+      <p>Send Message</p> <br> <br> <br>
+      <center><p>Powerd by jashwanth</p></center>
+    </div>
+  </body>
+</html>
